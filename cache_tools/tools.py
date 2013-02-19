@@ -27,7 +27,7 @@ def get_group_key(group):
     key = cache.get("cache_group_" + str(group), 1)
     return str(group) + str(key)
 
-def expire_group_key(group):
+def expire_cache_group(group):
     group_key = "cache_group_" + str(group)
     value = int(cache.get(group_key, 1)) + 1
     cache.set(group_key, value, TIME_TO_CACHE)

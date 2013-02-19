@@ -1,7 +1,7 @@
 from django.test import TestCase
 from mock import Mock, MagicMock, patch
 from django.test.client import RequestFactory
-from cache_tools.tools import cache_page_in_group, get_group_key, expire_group_key, TIME_TO_CACHE
+from cache_tools.tools import cache_page_in_group, get_group_key, expire_cache_group, TIME_TO_CACHE
 
 class CachingTest(TestCase):
     def test_get_group_key(self):
@@ -16,9 +16,9 @@ class CachingTest(TestCase):
 
     @patch('cache_tools.tools.cache.get')
     @patch('cache_tools.tools.cache.set')
-    def test_expire_group_key(self, cache_set, cache_get):
+    def test_expire_cache_group(self, cache_set, cache_get):
         cache_get.return_value = 15
-        expire_group_key('test')
+        expire_cache_group('test')
         cache_set.assert_called_with('cache_group_test', 16, TIME_TO_CACHE)
 
 
