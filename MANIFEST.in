@@ -1,5 +1,0 @@
-include AUTHORS
-include LICENSE
-include README.rst
-recursive-include cache_tools/static *
-recursive-include cache_tools/templates *
