@@ -10,6 +10,9 @@ Tools included
 - expire_page: Expire a page with a given path.
 - @cache_page_in_group: Cache pages with a given group name so they can be expired all at one.
 
+Documentation
+------------------------------------
+You can find the docs at http://django-cache-tools.readthedocs.org/.
 
 Running the Tests
 ------------------------------------

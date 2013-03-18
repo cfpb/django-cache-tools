@@ -1,3 +1,3 @@
-"Tools to make caching easier to use in Django"
+"Tools to make caching easier in Django"
 
 __version__ = '0.1.0'

@@ -16,9 +16,10 @@ setup(
     name='django-cache-tools',
     version=__import__('cache_tools').__version__,
     author='Diego Lapiduz',
+    author_email='diego@lapiduz.com',
     packages=find_packages(),
     include_package_data=True,
-    url='TBD',
+    url='https://github.com/cfpb/django-cache-tools',
     license='Public Domain',
     description=u' '.join(__import__('cache_tools').__doc__.splitlines()).strip(),
     classifiers=[
