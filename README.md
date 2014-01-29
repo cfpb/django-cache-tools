@@ -1,6 +1,8 @@
 Django Cache Tools
 ========================
 
+[![Build Status](https://travis-ci.org/cfpb/django-cache-tools.png?branch=master)](https://travis-ci.org/cfpb/django-cache-tools)
+
 Django Cache tools is a basic set of tools to built on top of the django cache framework
 to make it easier to use and add caching related features.
 
